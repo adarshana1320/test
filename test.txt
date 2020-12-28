@@ -9,3 +9,16 @@ sum = num1 + num2
 
 # Display the sum
 print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+#Average
+numlist = list()
+try:
+    while True:
+        inp = input('Enter a number:')
+        if inp == 'done' : break
+        value = float(inp)
+        numlist.append(value)
+    average = sum(numlist)/len(numlist)
+    print('Average:', average)
+except:
+    print('Value could not be found')
